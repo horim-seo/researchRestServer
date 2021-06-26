@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration 
 @MapperScan( 
-		basePackages = "com.tistory.aljjabaegi.api.mapper", sqlSessionFactoryRef = "sqlSessionFactory" 
+		basePackages = "com.research.restapi.mapper", sqlSessionFactoryRef = "sqlSessionFactory" 
 )
 
 
@@ -22,7 +22,8 @@ public class MybatisConfig {
 		SqlSessionFactoryBean factory = new SqlSessionFactoryBean(); 
 		factory.setDataSource(dataSource); 
 		
-		factory.setMapperLocations(applicationContext.getResources("classpath*:com/research/restapi/mapper/*.xml")); 
+		//factory.setMapperLocations(applicationContext.getResources("classpath*:com/research/restapi/mapper/*.xml"));
+		factory.setMapperLocations(applicationContext.getResources("classpath*:rest/mapper/*.xml"));
 		factory.setTypeAliasesPackage("com.research.restapi.domain"); 
 		org.apache.ibatis.session.Configuration configuration = new org.apache.ibatis.session.Configuration(); 
 		//configuration.setJdbcTypeForNull(null);
