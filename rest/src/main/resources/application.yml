@@ -9,7 +9,7 @@ server:
   port: 1235
 
 mybatis:
-  type-aliases-package: com.rest.mapper
+  type-aliases-package: com.research.restapi.mapper
   mapper-locations: mybatis/mapper/**/*.xml
 
 #spring:
@@ -18,3 +18,5 @@ mybatis:
 #    username: dba
 #    password: admin
 #    driver-class-name: core.log.jdbc.driver.CUBRIDDriver
+
+#localhost:1235/swagger-ui/index.html

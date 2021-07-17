@@ -1,8 +1,8 @@
 package com.research.restapi.service;
 
-import org.springframework.stereotype.Service;
+import com.research.restapi.vo.SurveyVo;
 
-@Service
 public interface ResearchService {
-	public String getMember() throws Exception;
+	
+	public SurveyVo getSurveyList(SurveyVo surveyVo);
 }
