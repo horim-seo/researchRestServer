@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.research.restapi.response.ResearchResponse;
 import com.research.restapi.service.ResearchService;
 import com.research.restapi.vo.SurveyVo;
 
@@ -22,7 +23,7 @@ public class ResearchController {
 	ResearchService researchService;
 	
 	@PostMapping("/test") 
-	public ResponseEntity<SurveyVo> getTest(@RequestBody SurveyVo surveyVo) { 
+	public ResponseEntity<ResearchResponse> getTest(@RequestBody SurveyVo surveyVo) { 
 		
 		String h = "Hello";
 		

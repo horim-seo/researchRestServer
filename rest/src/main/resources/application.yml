@@ -12,11 +12,12 @@ mybatis:
   type-aliases-package: com.research.restapi.mapper
   mapper-locations: mybatis/mapper/**/*.xml
 
-#spring:
-#  datasource:
-#    url: jdbc:cubrid:192.168.0.200:30000:survey_zinna:::?charset=UTF-8
-#    username: dba
-#    password: admin
-#    driver-class-name: core.log.jdbc.driver.CUBRIDDriver
+spring:
+  datasource:
+    url: jdbc:log4jdbc:cubrid:thin@192.168.0.200:30000:survey_zinna:::?charset=UTF-8
+    #url: jdbc:CUBRID:192.168.0.200:30000:survey_zinna:survey_zinna::?charset=utf8
+    username: dba
+    password: admin
+    driver-class-name: cubrid.jdbc.driver.CUBRIDDriver
 
 #localhost:1235/swagger-ui/index.html

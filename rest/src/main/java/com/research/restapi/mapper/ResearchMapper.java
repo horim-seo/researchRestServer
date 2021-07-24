@@ -1,14 +1,14 @@
 package com.research.restapi.mapper;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
 
 import com.research.restapi.vo.SurveyVo;
 
-@Repository
 @Mapper
 public interface ResearchMapper {
 	
-	public SurveyVo getSurveyList(SurveyVo surveyVo);
+	List<SurveyVo> getSurveyList(SurveyVo surveyVo);
 	
 }
